@@ -1,5 +1,11 @@
+import './App.css';
+
 function App() {
-  return <div>{/* Your Portfolio content will go here */}</div>;
+  return (
+    <div className="App">
+      <header />
+    </div>
+  );
 }
 
 export default App;

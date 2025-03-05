@@ -1,11 +1,13 @@
 import React from 'react';
-import './styles/header.css';
+import '../styles/Header.css';
 
-const header = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Theo.</h1>
+        <a href="#home" className="logo-link">
+          Theo.
+        </a>
       </div>
       <nav className="nav">
         <ul>
@@ -23,9 +25,10 @@ const header = () => {
           </li>
         </ul>
       </nav>
-      <button className="button">Contact</button>
+
+      <button className="contact-btn">Contact</button>
     </header>
   );
 };
 
-export default header;
+export default Header;

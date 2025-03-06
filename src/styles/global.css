@@ -32,3 +32,21 @@
 body {
   font-family: var(--font-main);
 }
+
+button {
+  background-color: var(--text-color-1);
+  color: var(--background-color-1);
+  font-size: var(--text-small);
+  font-weight: var(--font-medium);
+  font-family: var(--font-main);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--text-color-2);
+  transform: scale(1.02);
+}

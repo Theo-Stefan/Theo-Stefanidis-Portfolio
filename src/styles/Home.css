@@ -20,7 +20,7 @@
 }
 
 .triangle.one {
-  border-width: 450px 0 0 900px;
+  border-width: 420px 0 0 900px;
   border-color: transparent transparent transparent var(--background-color-2);
   left: 0;
   bottom: 0;
@@ -34,4 +34,61 @@
   bottom: 0;
   transform: rotate(180deg);
   z-index: 3;
+}
+
+.message {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  color: var(--text-color-2);
+  z-index: 5;
+  line-height: 0.5;
+}
+
+.message p {
+  font-size: var(--text-large);
+  font-weight: var(--font-regular);
+}
+
+.message h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+}
+
+.message h1:nth-child(3) {
+  margin-left: 110px;
+}
+
+.profession {
+  position: absolute;
+  right: 1%;
+  bottom: 2%;
+  z-index: 5;
+  line-height: 0.5;
+}
+
+.profession h1 {
+  color: var(--background-color-1);
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  text-align: right;
+}
+
+.resume-btn {
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+  z-index: 5;
+  padding: 14px 28px;
+  font-size: var(--text-regular);
+  font-weight: var(--font-semibold);
+}
+
+@media (max-width: 768px) {
+  .resume-button {
+    left: 10%;
+    bottom: 10%;
+    padding: 10px 20px;
+    font-size: var(--text-small);
+  }
 }

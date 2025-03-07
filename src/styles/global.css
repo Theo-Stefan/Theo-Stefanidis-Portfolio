@@ -25,7 +25,7 @@
   --text-big: 32px;
   --text-large: 48px;
   --text-xl: 64px;
-  --text-2xl: 96px;
+  --text-2xl: 84px;
   --text-3xl: 128px;
 }
 
@@ -40,6 +40,7 @@ button {
   font-size: var(--text-small);
   font-weight: var(--font-medium);
   font-family: var(--font-main);
+  white-space: nowrap;
   padding: 12px 24px;
   border: none;
   border-radius: 25px;

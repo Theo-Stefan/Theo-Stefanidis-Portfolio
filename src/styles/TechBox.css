@@ -36,7 +36,7 @@
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: var(--text-regular);
+  font-size: var(--text-small);
   font-weight: var(--font-semibold);
   color: var(--background-color-1);
   transition: all 0.3s ease;
@@ -51,5 +51,4 @@
 .rectangle:hover .tech-text {
   opacity: 1;
   transform: translateX(5px);
-  font-size: calc(var(--text-regular) * 0.9);
 }

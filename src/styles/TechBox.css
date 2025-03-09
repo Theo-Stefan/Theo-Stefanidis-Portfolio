@@ -1,0 +1,55 @@
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: var(--background-color-2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.rectangle:hover {
+  background-color: var(--background-color-3);
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tech-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tech-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  max-width: 90px;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--text-regular);
+  font-weight: var(--font-semibold);
+  color: var(--background-color-1);
+  transition: all 0.3s ease;
+}
+
+.rectangle:hover .tech-image {
+  width: 60px;
+  height: 60px;
+  transform: translateX(-45px);
+}
+
+.rectangle:hover .tech-text {
+  opacity: 1;
+  transform: translateX(5px);
+  font-size: calc(var(--text-regular) * 0.9);
+}

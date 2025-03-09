@@ -29,9 +29,12 @@
   --text-3xl: 128px;
 }
 
+/*======================================================*/
+
 body {
   font-family: var(--font-main);
   background-color: var(--background-color-1);
+  overflow: auto;
 }
 
 button {
@@ -52,3 +55,39 @@ button:hover {
   background-color: var(--text-color-2);
   transform: scale(1.02);
 }
+
+.section-title {
+  text-align: center;
+  font-size: var(--text-large);
+  font-weight: var(--font-semibold);
+  color: var(--text-color-2);
+  margin: 50px 0 50px;
+  position: relative;
+}
+
+.section-text {
+  text-align: center;
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
+  color: var(--text-color-2);
+  margin: 0 0 30px;
+  position: relative;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+/* ======= Customize Scrollbar ========= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*=========================================*/

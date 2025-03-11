@@ -78,12 +78,12 @@ button:hover {
 
 /* ======= Customize Scrollbar ========= */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--background-color-3);
-  border-radius: 10px;
+  background-color: var(--text-color-2);
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {

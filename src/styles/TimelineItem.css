@@ -6,14 +6,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: height 0.3s ease;
 }
 
 .cloud-message.expanded .cloud {
-  height: 180px;
+  height: 220px;
 }
 
 .cloud-icon {
@@ -60,10 +60,33 @@
   max-height: 0;
   overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .cloud-message.expanded .cloud-description {
   opacity: 1;
   max-height: 100px;
+}
+
+.right-cloud-arrow,
+.left-cloud-arrow {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+
+.right-cloud-arrow {
+  left: -14px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--background-color-2);
+}
+
+.left-cloud-arrow {
+  right: -14px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid var(--background-color-2);
 }

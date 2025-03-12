@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/TimelineItem.css';
 
-const TimelineItem = ({ icon, date, title, description }) => {
+const TimelineItem = ({ icon, date, title, description, isRight = true }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleDescription = () => {
@@ -27,6 +27,12 @@ const TimelineItem = ({ icon, date, title, description }) => {
         <div className={`cloud-description ${isExpanded ? 'show' : ''}`}>
           {description}
         </div>
+
+        {isRight ? (
+          <div className="right-cloud-arrow"></div>
+        ) : (
+          <div className="left-cloud-arrow"></div>
+        )}
       </div>
     </div>
   );

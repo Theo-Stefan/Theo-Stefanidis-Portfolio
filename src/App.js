@@ -8,6 +8,7 @@ import Career from './components/Career';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Solid icons
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Brand icons (e.g., GitHub, LinkedIn)
+import Projects from './components/Projects';
 
 library.add(fas, fab);
 
@@ -18,6 +19,7 @@ function App() {
       <Home />
       <About />
       <Career />
+      <Projects />
     </div>
   );
 }

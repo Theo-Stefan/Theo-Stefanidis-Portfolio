@@ -1,0 +1,55 @@
+.project-rectangle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--text-color-2);
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.project-rectangle:hover {
+  background-color: var(--background-color-2);
+  transform: scale(1.05);
+}
+
+.project-title {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--text-regular);
+  font-weight: var(--font-semibold);
+  color: var(--text-color-2);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.project-technologies {
+  margin-bottom: 35px;
+  font-size: var(--text-small);
+  color: var(--text-color-2);
+}
+
+.see-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--text-xs);
+  color: var(--text-color-2);
+  text-decoration: underline;
+}

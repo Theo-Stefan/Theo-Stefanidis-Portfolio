@@ -15,6 +15,18 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.project-title,
+.project-technologies,
+.see-more {
+  transition: color 0.3s ease;
+}
+
+.project-rectangle:hover .project-title,
+.project-rectangle:hover .project-technologies,
+.project-rectangle:hover .see-more {
+  color: var(--background-color-1);
+}
+
 .project-rectangle:hover {
   background-color: var(--background-color-2);
   transform: scale(1.05);
@@ -22,6 +34,9 @@
 
 .project-title {
   position: absolute;
+  width: 90%;
+  white-space: normal;
+  word-break: break-word;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
@@ -36,6 +51,7 @@
   margin: auto 0;
   border-radius: 4px;
   object-fit: cover;
+  margin-top: 55px;
 }
 
 .project-technologies {

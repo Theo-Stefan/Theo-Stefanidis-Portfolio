@@ -9,7 +9,7 @@ export const ProjectsData = [
       'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
     thumbnail: testThumbnail,
     technologies: 'HTML, CSS, JavaScript',
-    category: 'Web App',
+    category: ['Web Development'],
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const ProjectsData = [
       'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
     thumbnail: testThumbnail,
     technologies: 'Java, SQL',
-    category: 'Application',
+    category: ['Desktop Applications'],
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const ProjectsData = [
       'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
     thumbnail: testThumbnail,
     technologies: 'Java',
-    category: 'Application',
+    category: ['Desktop Applications'],
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const ProjectsData = [
       'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
     thumbnail: testThumbnail,
     technologies: 'HTML, CSS, JavaScript',
-    category: 'Web App',
+    category: ['Web Development'],
   },
   {
     id: 5,
@@ -49,6 +49,16 @@ export const ProjectsData = [
       'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
     thumbnail: testThumbnail,
     technologies: 'C#',
-    category: 'Video Game',
+    category: ['Game Development'],
+  },
+  {
+    id: 6,
+    title: 'Project 6',
+    Description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis ' +
+      'pellentesque vulputate. Sed fringilla odio interdum efficitur viverra. ',
+    thumbnail: testThumbnail,
+    technologies: 'C#',
+    category: ['Game Development', 'Mobile Applications'],
   },
 ];

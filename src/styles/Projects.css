@@ -4,4 +4,61 @@
   gap: 20px;
   justify-content: center;
   margin: 50px 200px 100px;
+  padding-top: 20px;
+}
+
+.category-filter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  font-size: var(--text-small);
+}
+
+.category-selection {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.category-text {
+  font-weight: var(--font-medium);
+  color: var(--text-color-2);
+  transition: color 0.3s ease;
+}
+
+.category-selection:hover .category-text {
+  color: var(--highlight-color);
+}
+
+/* Dropdown menu styles */
+.category-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: white;
+  border: 1px solid var(--text-color-2);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  z-index: 1;
+}
+
+.category-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.category-dropdown li:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color-2);
 }

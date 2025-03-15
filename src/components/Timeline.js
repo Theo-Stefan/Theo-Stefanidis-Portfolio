@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Timeline.css';
 import { TimelineData } from '../components/TimelineData';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TimelineItem from './TimelineItem';
 
 const Timeline = () => {

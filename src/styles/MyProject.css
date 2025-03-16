@@ -69,3 +69,81 @@
   color: var(--text-color-2);
   text-decoration: underline;
 }
+
+/*================== Project Modal =========================*/
+
+body.active-ProjectModal {
+  overflow-y: hidden;
+}
+
+.ProjectModal {
+  z-index: 101;
+}
+
+.ProjectModal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.ProjectModal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: var(--background-color-1);
+  padding: 0;
+  border-radius: 5px;
+  max-width: 1000px;
+  min-width: 500px;
+  max-height: 90vh;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectModal-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.ProjectModal-content h1 {
+  font-size: var(--text-regular);
+  padding-left: 28px;
+}
+
+.ProjectModal-content .content {
+  padding: 14px 28px;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.close-ProjectModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--text-color-1);
+  font-size: var(--text-base);
+}
+
+.close-ProjectModal:hover {
+  background-color: transparent;
+  color: var(--text-color-2);
+}

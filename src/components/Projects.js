@@ -83,6 +83,7 @@ const Projects = () => {
             title={project.title}
             thumbnail={project.thumbnail}
             technologies={project.technologies}
+            projectLink={'https://youtu.be/k625HpF1iXc'}
           />
         ))}
       </div>

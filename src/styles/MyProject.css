@@ -95,7 +95,7 @@ body.active-ProjectModal {
   background: rgba(49, 49, 49, 0.8);
 }
 
-.ProjectModal-content {
+.ProjectModal-window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,43 +104,45 @@ body.active-ProjectModal {
   background: var(--background-color-1);
   padding: 0;
   border-radius: 5px;
-  max-width: 1000px;
-  min-width: 500px;
-  max-height: 90vh;
-  min-height: 40vh;
+  width: 50vw;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
 
 .ProjectModal-header {
   position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   top: 0;
   z-index: 1;
   padding: 0;
   border-radius: 5px;
 }
 
-.ProjectModal-content h1 {
-  font-size: var(--text-regular);
-  padding-left: 28px;
+.ProjectModal button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color-1);
 }
 
-.ProjectModal-content .content {
-  padding: 14px 28px;
+.ProjectModal-window h1 {
+  font-size: var(--text-regular);
+}
+
+.ProjectModal-window .content {
+  padding: 0px 28px;
   overflow-y: auto;
-  max-height: 60vh;
 }
 
 .close-ProjectModal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: var(--text-color-1);
   font-size: var(--text-base);
+}
+
+.open-project {
+  font-size: var(--text-regular);
 }
 
 .close-ProjectModal:hover {

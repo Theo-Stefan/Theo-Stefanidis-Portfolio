@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import '../styles/MyProject.css';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import {
+  faXmark,
+  faArrowUpRightFromSquare,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import testImage from '../assets/ProjectThumbnails/test.png';
 
-const MyProject = ({ title, thumbnail, technologies }) => {
+const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
   const [ProjectModal, setProjectModal] = useState(false);
 
   const toggleProjectModal = () => {
     setProjectModal(!ProjectModal);
+  };
+
+  const openLink = (link) => {
+    window.open(link, '_blank');
   };
 
   if (ProjectModal) {
@@ -15,6 +23,16 @@ const MyProject = ({ title, thumbnail, technologies }) => {
   } else {
     document.body.classList.remove('active-ProjectModal');
   }
+
+  const images = [
+    testImage,
+    testImage,
+    testImage,
+    testImage,
+    testImage,
+    testImage,
+    testImage,
+  ];
 
   return (
     <>
@@ -28,8 +46,14 @@ const MyProject = ({ title, thumbnail, technologies }) => {
       {ProjectModal && (
         <div className="ProjectModal">
           <div className="overlay" onClick={toggleProjectModal}></div>
-          <div className="ProjectModal-content">
+          <div className="ProjectModal-window">
             <div className="ProjectModal-header">
+              <button
+                className="open-project"
+                onClick={() => openLink(projectLink)}
+              >
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </button>
               <h1>{title}</h1>
               <button
                 className="close-ProjectModal"

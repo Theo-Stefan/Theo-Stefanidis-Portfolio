@@ -1,0 +1,13 @@
+.swiper-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--background-color-1) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--background-color-1) !important;
+}

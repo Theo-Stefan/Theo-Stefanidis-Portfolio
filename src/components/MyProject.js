@@ -6,6 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import testImage from '../assets/ProjectThumbnails/test.png';
+import ImageSwiper from './ImageSwiper';
 
 const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
   const [ProjectModal, setProjectModal] = useState(false);
@@ -63,6 +64,7 @@ const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
               </button>
             </div>
             <div className="content">
+              <ImageSwiper images={images} />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent augue odio, vestibulum dapibus viverra laoreet, sodales

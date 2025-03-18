@@ -52,6 +52,16 @@
   color: var(--background-color-1);
   font-size: var(--text-base);
   padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+a .contact-icon:hover {
+  color: var(--background-color-3);
+  cursor: pointer;
+}
+
+a .contact-icon:active {
+  transform: scale(0.9);
 }
 
 .contact-email {

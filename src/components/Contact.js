@@ -14,8 +14,21 @@ const Contact = () => {
         <div className="contact-left">
           <div className="get-in-touch">
             <h2>Get In Touch</h2>
-            <FontAwesomeIcon icon={faGithub} className="contact-icon" />
-            <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
+            <a
+              href="https://github.com/Theo-Stefan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/theodoros-stefanidis-477276245/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
+            </a>
           </div>
 
           <div className="my-email">

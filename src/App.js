@@ -10,6 +10,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'; // Solid icons
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Brand icons (e.g., GitHub, LinkedIn)
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 library.add(fas, fab);
 
@@ -22,6 +23,7 @@ function App() {
       <Career />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
 
 const ContactForm = () => {
@@ -8,6 +9,8 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [loading, setLoading] = useState(false); // Add loading state
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -15,8 +18,27 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Message sent successfully!');
-    console.log(formData);
+    setLoading(true); // Start spinner
+
+    emailjs
+      .send(
+        'service_row9bpj',
+        'template_sxrbiq5',
+        formData,
+        'aSu3i1_mZ7_aIjlJe',
+      )
+      .then(
+        (response) => {
+          alert('Message sent successfully. Thank you for contacting!');
+          console.log('SUCCESS!', response.status, response.text);
+          setFormData({ name: '', email: '', message: '' });
+        },
+        (error) => {
+          alert('Failed to send message. Please try again.');
+          console.error('FAILED...', error);
+        },
+      )
+      .finally(() => setLoading(false)); // Stop spinner
   };
 
   return (
@@ -29,7 +51,6 @@ const ContactForm = () => {
         onChange={handleChange}
         required
       />
-
       <input
         type="email"
         name="email"
@@ -38,7 +59,6 @@ const ContactForm = () => {
         onChange={handleChange}
         required
       />
-
       <textarea
         name="message"
         rows="4"
@@ -47,8 +67,10 @@ const ContactForm = () => {
         onChange={handleChange}
         required
       />
-
-      <button type="submit">Send Message</button>
+      <button type="submit" disabled={loading}>
+        {loading ? 'Sending...' : 'Send Message'}
+      </button>
+      {loading && <div className="spinner"></div>} {/* Spinner */}
     </form>
   );
 };

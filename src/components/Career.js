@@ -4,7 +4,7 @@ import Timeline from './Timeline';
 
 const Career = () => {
   return (
-    <section className="career">
+    <section id="career" className="career">
       <h1 className="section-title">My Career Journey</h1>
 
       <p className="section-text">

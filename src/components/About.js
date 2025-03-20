@@ -16,7 +16,7 @@ import react from '../assets/Technologies/react-1-logo-png-transparent.png';
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <h1 className="section-title">About Me</h1>
 
       <p className="section-text">

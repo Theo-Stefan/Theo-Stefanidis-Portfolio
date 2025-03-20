@@ -4,7 +4,7 @@ import myPhoto from '../assets/MyPhoto/MyPhoto.png';
 
 const Home = () => {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <div className="triangle one"></div>
       <div className="triangle two"></div>
 

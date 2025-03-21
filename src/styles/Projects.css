@@ -40,6 +40,10 @@
 }
 
 /* Dropdown menu styles */
+.icon-filter {
+  color: var(--text-color-2);
+}
+
 .category-dropdown {
   position: absolute;
   top: 30px;
@@ -47,7 +51,7 @@
   background-color: white;
   border: 1px solid var(--text-color-2);
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-color-2);
   width: 220px;
   z-index: 1;
 }

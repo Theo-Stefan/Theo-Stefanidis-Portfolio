@@ -10,7 +10,7 @@
   padding: 15px 0px;
   position: relative;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-color-2);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -128,6 +128,11 @@ body.active-ProjectModal {
   color: var(--text-color-1);
 }
 
+.ProjectModal button:hover {
+  background-color: transparent;
+  color: var(--text-color-2);
+}
+
 .ProjectModal-window h1 {
   font-size: var(--text-regular);
 }
@@ -145,7 +150,6 @@ body.active-ProjectModal {
   font-size: var(--text-regular);
 }
 
-.close-ProjectModal:hover {
-  background-color: transparent;
+.ProjectModal-window .content .description {
   color: var(--text-color-2);
 }

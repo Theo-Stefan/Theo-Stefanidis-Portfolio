@@ -65,7 +65,7 @@ const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
             </div>
             <div className="content">
               <ImageSwiper images={images} />
-              <p>
+              <p className="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent augue odio, vestibulum dapibus viverra laoreet, sodales
                 at elit. Aliquam placerat elit leo. Donec eget orci vel dolor

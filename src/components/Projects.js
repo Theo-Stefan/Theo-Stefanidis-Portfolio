@@ -40,7 +40,7 @@ const Projects = () => {
 
       {/* Category Filter Section */}
       <div className="category-filter">
-        <div>
+        <div className="icon-filter">
           <FontAwesomeIcon icon={faArrowDownShortWide} />
         </div>
         <span className="filterByCategory">Filter By Category:</span>

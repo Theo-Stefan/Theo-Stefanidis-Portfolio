@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 :root {
   /* ================== Colors ======================== */
   /*Light mode*/
@@ -8,13 +10,23 @@
   --text-color-1: #1b263b;
   --text-color-2: #0d1b2a;
 
+  --shadow-color-1: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-color-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-color-3: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  --shadow-color-4: 6px 6px 20px rgba(0, 0, 0, 0.3);
+
   /*Dark mode*/
   /*--background-color-1: #121417;
   --background-color-2: #b388eb;
   --background-color-3: #8a67a5;
 
-  --text-color-1: #e0e1dd;
-  --text-color-2: #aab4c2;*/
+  --text-color-1: #aab4c2;
+  --text-color-2: #e0e1dd;
+
+  --shadow-color-1: 0 2px 10px rgba(255, 255, 255, 0.1);
+  --shadow-color-2: 0 4px 8px rgba(255, 255, 255, 0.1);
+  --shadow-color-3: 4px 4px 15px rgba(255, 255, 255, 0.2);
+  --shadow-color-4: 6px 6px 20px rgba(255, 255, 255, 0.3);*/
 
   /* ================= Fonts ======================= */
   /* Font Family */

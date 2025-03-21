@@ -1,11 +1,20 @@
 :root {
   /* ================== Colors ======================== */
+  /*Light mode*/
   --background-color-1: #e0e1dd;
   --background-color-2: #778da9;
   --background-color-3: #415a77;
 
   --text-color-1: #1b263b;
   --text-color-2: #0d1b2a;
+
+  /*Dark mode*/
+  /*--background-color-1: #121417;
+  --background-color-2: #b388eb;
+  --background-color-3: #8a67a5;
+
+  --text-color-1: #e0e1dd;
+  --text-color-2: #aab4c2;*/
 
   /* ================= Fonts ======================= */
   /* Font Family */

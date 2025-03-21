@@ -19,6 +19,11 @@
   font-size: var(--text-small);
 }
 
+.filterByCategory {
+  color: var(--text-color-2);
+  padding-left: 10px;
+}
+
 .category-selection {
   cursor: pointer;
   margin-left: 10px;

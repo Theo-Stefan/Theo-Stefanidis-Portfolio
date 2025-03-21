@@ -43,7 +43,7 @@ const Projects = () => {
         <div>
           <FontAwesomeIcon icon={faArrowDownShortWide} />
         </div>
-        <span style={{ paddingLeft: '10px' }}>Filter By Category:</span>
+        <span className="filterByCategory">Filter By Category:</span>
         <div className="category-selection" onClick={toggleDropdown}>
           <span
             className="category-text"

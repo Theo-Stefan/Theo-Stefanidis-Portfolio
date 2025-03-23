@@ -1,11 +1,11 @@
 .home {
   position: relative;
   display: flex;
-  height: 649px;
+  height: 92vh;
 }
 
 .photo {
-  width: 600px;
+  width: 40vw;
   height: auto;
   display: block;
   margin-left: 40%;
@@ -20,7 +20,7 @@
 }
 
 .triangle.one {
-  border-width: 420px 0 0 900px;
+  border-width: 60vh 0 0 58vw;
   border-color: transparent transparent transparent var(--background-color-2);
   left: 0;
   bottom: 0;
@@ -28,7 +28,7 @@
 }
 
 .triangle.two {
-  border-width: 550px 500px 0 0;
+  border-width: 78vh 33vw 0 0;
   border-color: var(--background-color-3) transparent transparent transparent;
   right: 0;
   bottom: 0;
@@ -46,17 +46,17 @@
 }
 
 .message p {
-  font-size: var(--text-large);
+  font-size: 3vw;
   font-weight: var(--font-regular);
 }
 
 .message h1 {
-  font-size: var(--text-2xl);
+  font-size: 5vw;
   font-weight: var(--font-semibold);
 }
 
 .message h1:nth-child(3) {
-  margin-left: 110px;
+  margin-left: 8vw;
 }
 
 .profession {
@@ -69,7 +69,7 @@
 
 .profession h1 {
   color: var(--background-color-1);
-  font-size: var(--text-xl);
+  font-size: 4vw;
   font-weight: var(--font-semibold);
   text-align: right;
 }

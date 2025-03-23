@@ -39,15 +39,15 @@
   --font-bold: 700;
 
   /* Font Sizes */
-  --text-xs: 14px;
-  --text-small: 16px;
-  --text-regular: 18px;
-  --text-base: 26px;
-  --text-big: 32px;
-  --text-large: 48px;
-  --text-xl: 64px;
-  --text-2xl: 84px;
-  --text-3xl: 128px;
+  --text-xs: 0.875rem;
+  --text-small: 1rem;
+  --text-regular: 1.125rem;
+  --text-base: 1.625rem;
+  --text-big: 2rem;
+  --text-large: 3rem;
+  --text-xl: 4rem;
+  --text-2xl: 5.25rem;
+  --text-3xl: 8rem;
 }
 
 /*======================================================*/
@@ -56,7 +56,7 @@ body {
   font-family: var(--font-main);
   background-color: var(--background-color-1);
   overflow: auto;
-  padding-top: 80px;
+  padding-top: 8vh;
 }
 
 button {

@@ -11,6 +11,8 @@
 .contact-form textarea {
   padding: 10px;
   border: 1px solid var(--background-color-1);
+  background-color: var(--background-color-1);
+  color: var(--text-color-2);
   border-radius: 15px;
   outline: none;
   transition: border 0.3s ease-in-out;
@@ -25,7 +27,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(0, 0, 0, 0.4); /* Low opacity placeholder */
+  color: var(--shadow-color-1); /* Low opacity placeholder */
 }
 
 .contact-form input:focus,

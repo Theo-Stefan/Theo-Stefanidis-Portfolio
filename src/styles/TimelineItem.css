@@ -13,7 +13,7 @@
 }
 
 .cloud-message.expanded .cloud {
-  height: 220px;
+  height: 250px;
 }
 
 .cloud-icon {
@@ -65,7 +65,7 @@
 
 .cloud-message.expanded .cloud-description {
   opacity: 1;
-  max-height: 100px;
+  max-height: 200px;
 }
 
 .right-cloud-arrow,

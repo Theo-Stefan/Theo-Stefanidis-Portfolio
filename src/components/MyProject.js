@@ -5,10 +5,16 @@ import {
   faArrowUpRightFromSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import testImage from '../assets/ProjectThumbnails/test.png';
 import ImageSwiper from './ImageSwiper';
 
-const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
+const MyProject = ({
+  title,
+  thumbnail,
+  images,
+  technologies,
+  projectLink,
+  description,
+}) => {
   const [ProjectModal, setProjectModal] = useState(false);
 
   const toggleProjectModal = () => {
@@ -24,16 +30,6 @@ const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
   } else {
     document.body.classList.remove('active-ProjectModal');
   }
-
-  const images = [
-    testImage,
-    testImage,
-    testImage,
-    testImage,
-    testImage,
-    testImage,
-    testImage,
-  ];
 
   return (
     <>
@@ -65,49 +61,7 @@ const MyProject = ({ title, thumbnail, technologies, projectLink }) => {
             </div>
             <div className="content">
               <ImageSwiper images={images} />
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Praesent augue odio, vestibulum dapibus viverra laoreet, sodales
-                at elit. Aliquam placerat elit leo. Donec eget orci vel dolor
-                maximus sollicitudin. Nunc a magna molestie, interdum dui vitae,
-                imperdiet arcu. Phasellus sit amet purus sed massa vulputate
-                ultricies. Integer commodo nisi eros, laoreet rhoncus massa
-                lobortis quis. Nam a sapien et diam hendrerit tristique non non
-                nisi. Duis congue, magna eu auctor euismod, magna lectus dapibus
-                sem, non blandit risus mauris vel dui. Vestibulum efficitur
-                sollicitudin tortor, a luctus velit congue eu. Suspendisse
-                potenti. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Praesent augue odio, vestibulum dapibus viverra laoreet,
-                sodales at elit. Aliquam placerat elit leo. Donec eget orci vel
-                dolor maximus sollicitudin. Nunc a magna molestie, interdum dui
-                vitae, imperdiet arcu. Phasellus sit amet purus sed massa
-                vulputate ultricies. Integer commodo nisi eros, laoreet rhoncus
-                massa lobortis quis. Nam a sapien et diam hendrerit tristique
-                non non nisi. Duis congue, magna eu auctor euismod, magna lectus
-                dapibus sem, non blandit risus mauris vel dui. Vestibulum
-                efficitur sollicitudin tortor, a luctus velit congue eu.
-                Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Praesent augue odio, vestibulum dapibus viverra
-                laoreet, sodales at elit. Aliquam placerat elit leo. Donec eget
-                orci vel dolor maximus sollicitudin. Nunc a magna molestie,
-                interdum dui vitae, imperdiet arcu. Phasellus sit amet purus sed
-                massa vulputate ultricies. Integer commodo nisi eros, laoreet
-                rhoncus massa lobortis quis. Nam a sapien et diam hendrerit
-                tristique non non nisi. Duis congue, magna eu auctor euismod,
-                magna lectus dapibus sem, non blandit risus mauris vel dui.
-                Vestibulum efficitur sollicitudin tortor, a luctus velit congue
-                eu. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Praesent augue odio, vestibulum dapibus viverra
-                laoreet, sodales at elit. Aliquam placerat elit leo. Donec eget
-                orci vel dolor maximus sollicitudin. Nunc a magna molestie,
-                interdum dui vitae, imperdiet arcu. Phasellus sit amet purus sed
-                massa vulputate ultricies. Integer commodo nisi eros, laoreet
-                rhoncus massa lobortis quis. Nam a sapien et diam hendrerit
-                tristique non non nisi. Duis congue, magna eu auctor euismod,
-                magna lectus dapibus sem, non blandit risus mauris vel dui.
-                Vestibulum efficitur sollicitudin tortor, a luctus velit congue
-                eu. Suspendisse potenti.
-              </p>
+              <p className="description">{description}</p>
             </div>
           </div>
         </div>

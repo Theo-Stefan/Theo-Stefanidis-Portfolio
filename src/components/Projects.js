@@ -82,8 +82,10 @@ const Projects = () => {
             key={project.id}
             title={project.title}
             thumbnail={project.thumbnail}
+            images={project.images}
             technologies={project.technologies}
-            projectLink={'https://youtu.be/k625HpF1iXc'}
+            projectLink={project.projectLink}
+            description={project.description}
           />
         ))}
       </div>

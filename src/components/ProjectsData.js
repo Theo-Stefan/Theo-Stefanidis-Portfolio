@@ -16,6 +16,7 @@ import Run4Life3 from '../assets/ProjectImages/Run4Life/run4life 3.png';
 import Run4Life4 from '../assets/ProjectImages/Run4Life/run4life 4.png';
 import fortknight1 from '../assets/ProjectImages/FortKnight/fortknight 1.png';
 import fortknight2 from '../assets/ProjectImages/FortKnight/fortknight 2.gif';
+import VivaCustomers from '../assets/ProjectImages/VivaCustomers/viva customers 1.png';
 
 export const ProjectsData = [
   {
@@ -70,10 +71,10 @@ export const ProjectsData = [
     title: 'Viva Customers',
     description:
       'To manage my 3D printing business, I developed Viva Customers, a Java Swing application that stores customer details and sales history in an SQL database. This project helped me learn how to build a responsive UI and implement efficient database handling, ensuring a lightweight program that runs smoothly on any Windows computer.',
-    thumbnail: fortknight1,
-    images: [fortknight2],
+    thumbnail: VivaCustomers,
+    videoURL: 'https://www.youtube.com/embed/I8DxPEX_w1Y',
     technologies: 'Java Swing, SQL',
     category: ['Desktop Applications'],
-    projectLink: 'https://acenturyandabit.github.io/fortknight',
+    projectLink: 'https://youtu.be/I8DxPEX_w1Y',
   },
 ];

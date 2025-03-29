@@ -11,6 +11,7 @@ const MyProject = ({
   title,
   thumbnail,
   images,
+  videoURL,
   technologies,
   projectLink,
   description,
@@ -60,7 +61,20 @@ const MyProject = ({
               </button>
             </div>
             <div className="content">
-              <ImageSwiper images={images} />
+              {videoURL ? (
+                <div className="video-wrapper">
+                  <iframe
+                    src={videoURL}
+                    title={title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              ) : (
+                <ImageSwiper images={images} />
+              )}
+
               <p className="description">{description}</p>
             </div>
           </div>

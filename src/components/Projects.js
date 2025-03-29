@@ -83,6 +83,7 @@ const Projects = () => {
             title={project.title}
             thumbnail={project.thumbnail}
             images={project.images}
+            videoURL={project.videoURL}
             technologies={project.technologies}
             projectLink={project.projectLink}
             description={project.description}

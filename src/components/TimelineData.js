@@ -4,6 +4,7 @@ import {
   faPersonMilitaryRifle,
   faBookOpen,
   faSchool,
+  faCube,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const TimelineData = [
@@ -25,6 +26,14 @@ export const TimelineData = [
   },
   {
     id: 3,
+    icon: faCube,
+    date: '2020 - 2024',
+    title: '3D Printing',
+    description:
+      'Extensive experience with 3D printing, including designing models in CAD software (Autodesk Fusion 360), modifying G-code for optimized prints, and producing custom 3D-printed objects for customers. This hands-on work enhanced my problem-solving skills and deepened my understanding of digital fabrication and automation.',
+  },
+  {
+    id: 4,
     icon: faBriefcase,
     date: '01/03/2024 - 01/06/2024',
     title: 'Intership Experience at Value+ in Milan, Italy',
@@ -32,7 +41,7 @@ export const TimelineData = [
       'I completed a 3-month internship at Value+ in Milan, Italy, where I gained hands-on experience in React JavaScript and web development. I also improved my Italian and collaborated effectively with my colleagues, enhancing both my technical and interpersonal skills.\n(https://www.valueplus.it/)',
   },
   {
-    id: 4,
+    id: 5,
     icon: faGraduationCap,
     date: '04/12/2024',
     title: 'University Graduation',
@@ -40,7 +49,7 @@ export const TimelineData = [
       'I graduated from the Computer Science Department at Aristotle University of Thessaloniki, where I explored multiple areas, from programming and systems architecture to databases and software engineering. Working on a wide range of projects helped me develop a versatile skill set that I continue to build on in my professional journey.',
   },
   {
-    id: 5,
+    id: 6,
     icon: faPersonMilitaryRifle,
     date: '15/11/2024 - 15/05/2025',
     title: 'Military Service',

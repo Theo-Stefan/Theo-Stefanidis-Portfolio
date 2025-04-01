@@ -153,6 +153,7 @@ body.active-ProjectModal {
 
 .ProjectModal-window .content .description {
   color: var(--text-color-2);
+  white-space: pre-line;
 }
 
 .video-wrapper {

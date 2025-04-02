@@ -7,6 +7,8 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const topOffset = 80; // Offset for smooth scrolling
+  const [selectedLanguage, setSelectedLanguage] = useState('EN');
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
@@ -48,6 +50,16 @@ const Header = () => {
     window.location.reload();
   };
 
+  //Handle language selection
+  const handleLanguageSelect = (language) => {
+    setSelectedLanguage(language);
+    setIsDropdownVisible(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible((prevState) => !prevState);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
@@ -81,6 +93,20 @@ const Header = () => {
           Contact
         </button>
       </div>
+
+      <div className="language-selection" onClick={toggleDropdown}>
+        <span className="language-text">{selectedLanguage}</span>
+      </div>
+
+      {isDropdownVisible && (
+        <div className="language-dropdown">
+          <ul>
+            <li onClick={() => handleLanguageSelect('EN')}>EN</li>
+            <li onClick={() => handleLanguageSelect('IT')}>IT</li>
+            <li onClick={() => handleLanguageSelect('GR')}>GR</li>
+          </ul>
+        </div>
+      )}
 
       <button id="theme-switch-btn" onClick={toggleTheme}>
         {isDarkTheme ? (

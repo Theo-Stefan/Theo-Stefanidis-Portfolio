@@ -2,17 +2,18 @@ import React, { useEffect, useState } from 'react';
 import '../styles/Header.css';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
+import i18n from '../utils/i18n';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const topOffset = 80; // Offset for smooth scrolling
-  const [selectedLanguage, setSelectedLanguage] = useState('EN');
+  const topOffset = 80;
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -50,9 +51,8 @@ const Header = () => {
     window.location.reload();
   };
 
-  //Handle language selection
   const handleLanguageSelect = (language) => {
-    setSelectedLanguage(language);
+    i18n.changeLanguage(language);
     setIsDropdownVisible(false);
   };
 
@@ -72,16 +72,22 @@ const Header = () => {
         <nav className="nav">
           <ul>
             <li>
-              <a onClick={() => scrollToSection('home')}>Home</a>
+              <a onClick={() => scrollToSection('home')}>{t('header.home')}</a>
             </li>
             <li>
-              <a onClick={() => scrollToSection('about')}>About</a>
+              <a onClick={() => scrollToSection('about')}>
+                {t('header.about')}
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection('career')}>Career Journey</a>
+              <a onClick={() => scrollToSection('career')}>
+                {t('header.career')}
+              </a>
             </li>
             <li>
-              <a onClick={() => scrollToSection('projects')}>Projects</a>
+              <a onClick={() => scrollToSection('projects')}>
+                {t('header.projects')}
+              </a>
             </li>
           </ul>
         </nav>
@@ -90,20 +96,20 @@ const Header = () => {
           className="contact-btn"
           onClick={() => scrollToSection('contact')}
         >
-          Contact
+          {t('header.contactBTN')}
         </button>
       </div>
 
       <div className="language-selection" onClick={toggleDropdown}>
-        <span className="language-text">{selectedLanguage}</span>
+        <span className="language-text">{i18n.language.toUpperCase()}</span>
       </div>
 
       {isDropdownVisible && (
         <div className="language-dropdown">
           <ul>
-            <li onClick={() => handleLanguageSelect('EN')}>EN</li>
-            <li onClick={() => handleLanguageSelect('IT')}>IT</li>
-            <li onClick={() => handleLanguageSelect('GR')}>GR</li>
+            <li onClick={() => handleLanguageSelect('en')}>EN</li>
+            <li onClick={() => handleLanguageSelect('it')}>IT</li>
+            <li onClick={() => handleLanguageSelect('gr')}>GR</li>
           </ul>
         </div>
       )}

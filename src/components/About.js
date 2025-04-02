@@ -13,26 +13,17 @@ import javascript from '../assets/Technologies/JavaScript-Logo.png';
 import python from '../assets/Technologies/Python-logo-notext.svg.png';
 import typescript from '../assets/Technologies/png-clipart-angularjs-typescript-javascript-vue-js-others-blue-angle.png';
 import react from '../assets/Technologies/react-1-logo-png-transparent.png';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about">
-      <h1 className="section-title">About Me</h1>
+      <h1 className="section-title">{t('about.title')}</h1>
 
-      <p className="section-text">
-        My journey into programming began at 14, when I first attempted to build
-        a video game. Seeing my code come to life sparked a passion for creating
-        interactive experiences from scratch. This fascination led me to study
-        Informatics, where I explored various technologies and honed my skills.
-        While my expertise lies in front-end development, I also have a strong
-        foundation in back-end technologies, allowing me to contribute
-        effectively across the full stack. Now, as a software developer, I
-        thrive on bringing ideas to life through clean code and innovative
-        design.
-      </p>
-      <p className="section-text">
-        My experience spans the following technologies:
-      </p>
+      <p className="section-text">{t('about.text1')}</p>
+      <p className="section-text">{t('about.text2')}</p>
 
       <div className="techbox-container">
         <TechBox image={C} text={'C'} />

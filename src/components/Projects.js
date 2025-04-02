@@ -4,10 +4,12 @@ import MyProject from './MyProject';
 import { faArrowDownShortWide } from '@fortawesome/free-solid-svg-icons';
 import { ProjectsData } from './ProjectsData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const { t } = useTranslation();
 
   // Handle category selection
   const handleCategorySelect = (category) => {
@@ -30,20 +32,18 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h1 className="section-title">My Projects</h1>
+      <h1 className="section-title">{t('projects.title')}</h1>
 
-      <p className="section-text">
-        Here are some of the projects I’ve worked on, ranging from web
-        applications to software experiments. Each project reflects my passion
-        for coding, problem-solving, and building intuitive user experiences.
-      </p>
+      <p className="section-text">{t('projects.text')}</p>
 
       {/* Category Filter Section */}
       <div className="category-filter">
         <div className="icon-filter">
           <FontAwesomeIcon icon={faArrowDownShortWide} />
         </div>
-        <span className="filterByCategory">Filter By Category:</span>
+        <span className="filterByCategory">
+          {t('projects.filterByCategory')}:
+        </span>
         <div className="category-selection" onClick={toggleDropdown}>
           <span
             className="category-text"
@@ -57,18 +57,20 @@ const Projects = () => {
         {isDropdownVisible && (
           <div className="category-dropdown">
             <ul>
-              <li onClick={() => handleCategorySelect('All')}>All</li>
+              <li onClick={() => handleCategorySelect('All')}>
+                {t('projects.categories.all')}
+              </li>
               <li onClick={() => handleCategorySelect('Web Development')}>
-                Web Development
+                {t('projects.categories.webDev')}
               </li>
               <li onClick={() => handleCategorySelect('Desktop Applications')}>
-                Desktop Applications
+                {t('projects.categories.desktopApp')}
               </li>
               <li onClick={() => handleCategorySelect('Game Development')}>
-                Game Development
+                {t('projects.categories.gameDev')}
               </li>
               <li onClick={() => handleCategorySelect('Mobile Applications')}>
-                Mobile Applications
+                {t('projects.categories.mobileApp')}
               </li>
             </ul>
           </div>

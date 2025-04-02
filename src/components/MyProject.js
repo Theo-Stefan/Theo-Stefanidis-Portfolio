@@ -6,6 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ImageSwiper from './ImageSwiper';
+import { useTranslation } from 'react-i18next';
 
 const MyProject = ({
   title,
@@ -17,6 +18,7 @@ const MyProject = ({
   description,
 }) => {
   const [ProjectModal, setProjectModal] = useState(false);
+  const { t } = useTranslation();
 
   const toggleProjectModal = () => {
     setProjectModal(!ProjectModal);
@@ -38,7 +40,7 @@ const MyProject = ({
         <div className="project-title">{title}</div>
         <img src={thumbnail} alt="Image" className="project-thumbnail" />
         <div className="project-technologies">{technologies}</div>
-        <div className="see-more">See more...</div>
+        <div className="see-more">{t('projects.seeMore')}</div>
       </div>
 
       {ProjectModal && (

@@ -2,13 +2,17 @@ import React from 'react';
 import '../styles/Timeline.css';
 import { TimelineData } from '../components/TimelineData';
 import TimelineItem from './TimelineItem';
+import { useTranslation } from 'react-i18next';
 
 const Timeline = () => {
+  const timelineData = TimelineData();
+  const { t } = useTranslation();
+
   return (
     <div className="timeline-container">
       <div className="timeline-line timeline-top-line"></div>
 
-      {TimelineData.map((milestone) => (
+      {timelineData.map((milestone) => (
         <div key={milestone.id} className="timeline-point">
           {milestone.id % 2 === 1 ? (
             <div className="cloud-message-right">
@@ -36,7 +40,7 @@ const Timeline = () => {
 
       <div className="timeline-line timeline-bottom-line">
         <div className="timeline-arrow"></div>
-        <div className="timeline-end-text">Present</div>
+        <div className="timeline-end-text">{t('career.present')}</div>
       </div>
     </div>
   );

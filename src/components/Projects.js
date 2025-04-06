@@ -12,13 +12,11 @@ const Projects = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const { t } = useTranslation();
 
-  // Handle category selection
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
-    setIsDropdownVisible(false); // Close the dropdown after selection
+    setIsDropdownVisible(false);
   };
 
-  // Toggle dropdown visibility
   const toggleDropdown = () => {
     setIsDropdownVisible((prevState) => !prevState);
   };

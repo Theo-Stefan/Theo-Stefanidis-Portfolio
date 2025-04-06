@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const projectsData = ProjectsData();
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const { t } = useTranslation();
@@ -25,8 +26,8 @@ const Projects = () => {
   // Filter projects based on the selected category
   const filteredProjects =
     selectedCategory === 'All'
-      ? ProjectsData
-      : ProjectsData.filter((project) =>
+      ? projectsData
+      : projectsData.filter((project) =>
           project.category.includes(selectedCategory),
         );
 

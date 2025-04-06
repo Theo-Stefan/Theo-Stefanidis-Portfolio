@@ -8,6 +8,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
+/* Add a new timestamp:
+1. In the TimelineData array, add a new timestamp at the bottom with id=previous_id + 1
+2. Add icon and date just like the other timestamps
+3. In the file i18n.js, for each language find the career->timeline and add the new timestamp's title and description in the according language
+*/
+
 export const TimelineData = () => {
   const { t } = useTranslation();
 

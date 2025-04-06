@@ -79,32 +79,48 @@ const resources = {
         },
         projectsData: {
           id6: {
-            title: '',
-            description: '',
+            title: 'My Thesis',
+            description:
+              '"Improving and Gamifying ePhos AR" is my university thesis project, where I worked on enhancing and gamifying the ePhos AR mobile application. ePhos AR is an educational app that introduces high school and university students to the science of Photonics using augmented reality technology.\n\nMy contribution focused on fixing bugs and integrating gamification elements to boost user engagement—an approach backed by scientific research. Specifically, I added:\n\n- A virtual assistant to guide users throughout the experience, replacing traditional paper-based instructions.\n- A progress bar to visually track the player’s advancement.\n- Badges to reward achievements and encourage further exploration.\n\nThese features were developed in Unity with C# over six months of dedicated work and research. The goal was to make learning more interactive, enjoyable, and effective.',
           },
           id5: {
-            title: '',
-            description: '',
+            title: 'Viva Customers',
+            description:
+              'To manage my 3D printing business, I developed Viva Customers, a Java Swing application that stores customer details and sales history in an SQL database. This project helped me learn how to build a responsive UI and implement efficient database handling, ensuring a lightweight program that runs smoothly on any Windows computer.',
           },
           id4: {
-            title: '',
-            description: '',
+            title: 'FortKnight',
+            description:
+              "As a chess enthusiast, I contributed to FortKnight, a web-based chess game with unique rules. I added a toggle switch that visualizes the knight's possible moves using green dots, improving clarity for players. This contribution challenged me to dive into an unfamiliar codebase written in HTML, CSS, and JavaScript, enhancing both my coding skills and my ability to adapt to new projects.",
           },
           id3: {
-            title: '',
-            description: '',
+            title: 'Run 4 Life (Video Game)',
+            description:
+              'Run 4 Life is a 3D action game I developed as part of a university project. In this fast-paced challenge, the player must dodge obstacles, collect diamonds, and reach the finish line. It was my first experience combining 3D graphics, sound effects, and animations, all brought to life using Unity and C#.',
           },
           id2: {
-            title: '',
-            description: '',
+            title: 'The Number (Video Game)',
+            description:
+              'At 15, I developed The Number, a mind-reading game built with Game Maker Studio. The player thinks of a number between 1 and 31, and through a series of clever questions, the game successfully guesses it.',
           },
           id1: {
-            title: '',
-            description: '',
+            title: 'My First Video Game - Maze Rush',
+            description:
+              'At the age of 14, I created my very first video game using Game Maker Studio — an experience that sparked my passion for programming. In this game, the player controls a smiley face navigating through intricate mazes filled with enemies and obstacles, aiming to reach the portal that leads to the next level. This project marked my first step into the world of game development and interactive experiences.',
           },
         },
       },
-      contact: {},
+      contact: {
+        contactMe: 'Contact Me',
+        getInTouch: 'Get In Touch',
+        myEmail: 'My email',
+        contactForm: {
+          name: 'Your Name',
+          email: 'Your Email Adress',
+          message: 'Write your message here...',
+          send: 'Send Message',
+        },
+      },
     },
   },
   it: {
@@ -181,32 +197,48 @@ const resources = {
         },
         projectsData: {
           id6: {
-            title: '',
-            description: '',
+            title: 'La mia Tesi',
+            description:
+              "\"Miglioramento e Gamification di ePhos AR\" è il mio progetto di tesi universitaria, in cui ho lavorato al miglioramento e alla gamification dell'applicazione mobile ePhos AR. ePhos AR è un'app educativa che introduce gli studenti delle scuole superiori e universitari alla scienza della fotonica utilizzando la tecnologia della realtà aumentata.\n\nIl mio contributo si è concentrato sulla correzione di bug e sull'integrazione di elementi di gamification per aumentare il coinvolgimento degli utenti—un approccio supportato da ricerche scientifiche. In particolare, ho aggiunto:\n\n-Un assistente virtuale per guidare gli utenti durante l’esperienza, sostituendo le istruzioni cartacee tradizionali.\n-Una barra di progresso per visualizzare i progressi del giocatore.\n-Badge per premiare i traguardi raggiunti e incentivare l'esplorazione.\n\nQueste funzionalità sono state sviluppate in Unity con C#, nel corso di sei mesi di lavoro e ricerca dedicati. L'obiettivo era rendere l'apprendimento più interattivo, piacevole ed efficace.",
           },
           id5: {
-            title: '',
-            description: '',
+            title: 'Viva Customers',
+            description:
+              "Per gestire la mia attività di stampa 3D, ho sviluppato Viva Customers, un'applicazione Java Swing che memorizza i dati dei clienti e la cronologia delle vendite in un database SQL. Questo progetto mi ha aiutato a imparare a creare un'interfaccia utente reattiva e a gestire in modo efficiente un database, garantendo un programma leggero e fluido su qualsiasi computer Windows.",
           },
           id4: {
-            title: '',
-            description: '',
+            title: 'FortKnight',
+            description:
+              'Come appassionato di scacchi, ho contribuito a FortKnight, un gioco di scacchi web con regole uniche. Ho aggiunto un interruttore che visualizza le mosse possibili del cavallo con dei punti verdi, migliorando la chiarezza per i giocatori. Questo contributo mi ha sfidato a esplorare un codice sconosciuto scritto in HTML, CSS e JavaScript, migliorando sia le mie abilità di programmazione che la mia capacità di adattamento a nuovi progetti.',
           },
           id3: {
-            title: '',
-            description: '',
+            title: 'Run 4 Life (Videogioco)',
+            description:
+              "Run 4 Life è un gioco d'azione 3D che ho sviluppato come parte di un progetto universitario. In questa sfida frenetica, il giocatore deve evitare ostacoli, raccogliere diamanti e raggiungere il traguardo. È stata la mia prima esperienza nell'unire grafica 3D, effetti sonori e animazioni, tutto realizzato con Unity e C#.",
           },
           id2: {
-            title: '',
-            description: '',
+            title: 'The Number (Videogioco)',
+            description:
+              'A 15 anni, ho sviluppato The Number, un gioco di lettura della mente costruito con Game Maker Studio. Il giocatore pensa a un numero tra 1 e 31, e tramite una serie di domande intelligenti, il gioco riesce a indovinarlo.',
           },
           id1: {
-            title: '',
-            description: '',
+            title: 'Il mio primo videogioco - Maze Rush',
+            description:
+              "All'età di 14 anni, ho creato il mio primo videogioco con Game Maker Studio — un'esperienza che ha acceso la mia passione per la programmazione. In questo gioco, il giocatore controlla una faccina sorridente che deve attraversare labirinti pieni di nemici e ostacoli per raggiungere il portale che conduce al livello successivo. Questo progetto ha segnato il mio primo passo nel mondo dello sviluppo videoludico e delle esperienze interattive.",
           },
         },
       },
-      contact: {},
+      contact: {
+        contactMe: 'Contattami',
+        getInTouch: 'Mettiti in contatto',
+        myEmail: 'La mia email',
+        contactForm: {
+          name: 'Il tuo nome',
+          email: 'Il tuo indirizzo email',
+          message: 'Scrivi qui il tuo messaggio...',
+          send: 'Invia Messaggio',
+        },
+      },
     },
   },
   gr: {
@@ -283,32 +315,48 @@ const resources = {
         },
         projectsData: {
           id6: {
-            title: '',
-            description: '',
+            title: 'Η Πτυχιακή μου Εργασία',
+            description:
+              '"Βελτίωση και Παιχνιδοποίηση του ePhos AR" είναι το πανεπιστημιακό μου πτυχιακό έργο, στο οποίο εργάστηκα για τη βελτίωση και την παιχνιδοποίηση της εφαρμογής ePhos AR. Το ePhos AR είναι μια εκπαιδευτική εφαρμογή που εισάγει μαθητές Λυκείου και φοιτητές στην επιστήμη της Φωτονικής, αξιοποιώντας την τεχνολογία της επαυξημένης πραγματικότητας.\n\nΗ συμβολή μου επικεντρώθηκε στη διόρθωση σφαλμάτων και την ενσωμάτωση στοιχείων παιχνιδοποίησης, ώστε να ενισχυθεί η αλληλεπίδραση των χρηστών — μια προσέγγιση που υποστηρίζεται από επιστημονική έρευνα. Συγκεκριμένα, πρόσθεσα:\n\n-Έναν εικονικό βοηθό που καθοδηγεί τους χρήστες σε όλη τη διάρκεια της εμπειρίας, αντικαθιστώντας τις παραδοσιακές έντυπες οδηγίες.\n-Μια μπάρα προόδου για οπτική αναπαράσταση της πορείας του παίκτη.\n-Κονκάρδες (badges) ως επιβράβευση για επιτεύγματα και κίνητρο για περαιτέρω εξερεύνηση.\n\nΑυτά τα χαρακτηριστικά αναπτύχθηκαν σε Unity με C# μέσα σε έξι μήνες αφοσιωμένης εργασίας και έρευνας. Ο στόχος ήταν να γίνει η μάθηση πιο διαδραστική, ευχάριστη και αποτελεσματική.',
           },
           id5: {
-            title: '',
-            description: '',
+            title: 'Viva Customers',
+            description:
+              'Για τη διαχείριση της επιχείρησής μου με 3D εκτυπώσεις, ανέπτυξα την εφαρμογή Viva Customers με Java Swing, η οποία αποθηκεύει τα στοιχεία πελατών και το ιστορικό πωλήσεων σε μια βάση δεδομένων SQL. Μέσα από αυτό το project, έμαθα να κατασκευάζω ευέλικτο περιβάλλον χρήστη και να χειρίζομαι αποτελεσματικά βάσεις δεδομένων, διασφαλίζοντας ένα ελαφρύ πρόγραμμα που τρέχει ομαλά σε οποιονδήποτε υπολογιστή με Windows.',
           },
           id4: {
-            title: '',
-            description: '',
+            title: 'FortKnight',
+            description:
+              'Ως λάτρης του σκακιού, συνέβαλα στην ανάπτυξη του FortKnight, ενός διαδικτυακού παιχνιδιού σκακιού με μοναδικούς κανόνες. Πρόσθεσα έναν διακόπτη που εμφανίζει τις πιθανές κινήσεις του ίππου με πράσινες κουκκίδες, βελτιώνοντας την κατανόηση για τον παίκτη. Η συνεισφορά μου απαιτούσε να εξοικειωθώ με έναν άγνωστο κώδικα γραμμένο σε HTML, CSS και JavaScript, ενισχύοντας τόσο τις προγραμματιστικές μου δεξιότητες όσο και την προσαρμοστικότητά μου σε νέα projects.',
           },
           id3: {
-            title: '',
-            description: '',
+            title: 'Run 4 Life (Βιντεοπαιχνίδι)',
+            description:
+              'Το Run 4 Life είναι ένα 3D παιχνίδι δράσης που ανέπτυξα στο πλαίσιο πανεπιστημιακού project. Σε αυτή τη γρήγορη δοκιμασία, ο παίκτης πρέπει να αποφύγει εμπόδια, να μαζέψει διαμάντια και να φτάσει στη γραμμή τερματισμού. Ήταν η πρώτη μου εμπειρία που συνδύασε 3D γραφικά, ηχητικά εφέ και animation, όλα υλοποιημένα με Unity και C#.',
           },
           id2: {
-            title: '',
-            description: '',
+            title: 'The Number (Βιντεοπαιχνίδι)',
+            description:
+              'Στα 15 μου, ανέπτυξα το The Number, ένα παιχνίδι "ανάγνωσης σκέψης" με το Game Maker Studio. Ο παίκτης σκέφτεται έναν αριθμό από το 1 έως το 31, και το παιχνίδι τον μαντεύει μέσα από μια σειρά έξυπνων ερωτήσεων.',
           },
           id1: {
-            title: '',
-            description: '',
+            title: 'Το πρώτο μου βιντεοπαιχνίδι - Maze Rush',
+            description:
+              'Σε ηλικία 14 ετών, δημιούργησα το πρώτο μου βιντεοπαιχνίδι χρησιμοποιώντας το Game Maker Studio — μια εμπειρία που πυροδότησε το πάθος μου για τον προγραμματισμό. Στο παιχνίδι, ο παίκτης ελέγχει ένα χαμογελαστό προσωπάκι που προσπαθεί να διασχίσει πολύπλοκους λαβυρίνθους γεμάτους εχθρούς και εμπόδια, με στόχο να φτάσει στην πύλη που οδηγεί στο επόμενο επίπεδο. Το project αυτό αποτέλεσε το πρώτο μου βήμα στον κόσμο της ανάπτυξης παιχνιδιών και των διαδραστικών εμπειριών.',
           },
         },
       },
-      contact: {},
+      contact: {
+        contactMe: 'Επικοινώνησε Μαζί Μου',
+        getInTouch: 'Έλα σε επαφή',
+        myEmail: 'Το email μου',
+        contactForm: {
+          name: 'Το όνομά σου',
+          email: 'Η διεύθυνση email σου',
+          message: 'Γράψε το μήνυμά σου εδώ...',
+          send: 'Αποστολή Μηνύματος',
+        },
+      },
     },
   },
 };

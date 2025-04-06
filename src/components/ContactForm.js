@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import '../styles/ContactForm.css';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,7 +49,7 @@ const ContactForm = () => {
       <input
         type="text"
         name="name"
-        placeholder="Your Name"
+        placeholder={t('contact.contactForm.name')}
         value={formData.name}
         onChange={handleChange}
         required
@@ -54,7 +57,7 @@ const ContactForm = () => {
       <input
         type="email"
         name="email"
-        placeholder="Your Email Address"
+        placeholder={t('contact.contactForm.email')}
         value={formData.email}
         onChange={handleChange}
         required
@@ -62,13 +65,13 @@ const ContactForm = () => {
       <textarea
         name="message"
         rows="4"
-        placeholder="Write your message here..."
+        placeholder={t('contact.contactForm.message')}
         value={formData.message}
         onChange={handleChange}
         required
       />
       <button type="submit" disabled={loading}>
-        {loading ? 'Sending...' : 'Send Message'}
+        {loading ? 'Sending...' : t('contact.contactForm.send')}
       </button>
       {loading && <div className="spinner"></div>} {/* Spinner */}
     </form>

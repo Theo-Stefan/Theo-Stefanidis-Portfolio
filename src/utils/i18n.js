@@ -30,8 +30,6 @@ const resources = {
         title: 'My Career Journey',
         text: 'Here are the key milestones that shaped my journey as a developer, from my early steps in programming to becoming a software professional.',
         present: 'Present',
-        readMore: 'Read more...',
-        readLess: 'Read less...',
         timeline: {
           id1: {
             title: 'High School Graduation',
@@ -149,8 +147,6 @@ const resources = {
         title: 'Il Mio Percorso Professionale',
         text: 'Ecco le tappe fondamentali che hanno plasmato il mio percorso come sviluppatore, dai miei primi passi nella programmazione fino a diventare un professionista del software.',
         present: 'Presente',
-        readMore: 'Leggi di più...',
-        readLess: 'Leggi di meno...',
         timeline: {
           id1: {
             title: 'Diploma di Maturità',
@@ -268,8 +264,6 @@ const resources = {
         title: 'Η Επαγγελματική Μου Πορεία',
         text: 'Εδώ είναι τα βασικά ορόσημα που διαμόρφωσαν την πορεία μου ως προγραμματιστής, από τα πρώτα μου βήματα στον προγραμματισμό μέχρι να γίνω επαγγελματίας του λογισμικού.',
         present: 'Παρόν',
-        readMore: 'Διάβασε περισσότερα...',
-        readLess: 'Διάβασε λιγότερα...',
         timeline: {
           id1: {
             title: 'Αποφοίτηση από το Λύκειο',

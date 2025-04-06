@@ -71,7 +71,9 @@ const ContactForm = () => {
         required
       />
       <button type="submit" disabled={loading}>
-        {loading ? 'Sending...' : t('contact.contactForm.send')}
+        {loading
+          ? t('contact.contactForm.sending')
+          : t('contact.contactForm.send')}
       </button>
       {loading && <div className="spinner"></div>} {/* Spinner */}
     </form>

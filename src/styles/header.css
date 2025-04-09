@@ -8,6 +8,10 @@
   z-index: 100;
   transition: box-shadow 0.3s ease-in-out;
   height: 8vh;
+
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 2s;
 }
 
 .header-container {
@@ -141,4 +145,15 @@
 #theme-switch-btn:hover {
   transform: translateY(-50%) scale(1.02);
   color: var(--text-color-2);
+}
+
+/* ========================= KEYFRAMES - ANIMATIONS =========================*/
+/* Simple Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -10,6 +10,9 @@
   display: block;
   margin-left: 40%;
   z-index: 2;
+  animation: fadeInRight 1s ease-out forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
 }
 
 .triangle {
@@ -25,15 +28,21 @@
   left: 0;
   bottom: 0;
   z-index: 1;
+  opacity: 0;
+  animation: fadeInLeftTriangle 1s ease-out forwards;
+  animation-delay: 1.2s;
 }
 
 .triangle.two {
   border-width: 78vh 33vw 0 0;
-  border-color: var(--background-color-3) transparent transparent transparent;
+  border-color: transparent var(--background-color-3) transparent transparent;
   right: 0;
   bottom: 0;
   transform: rotate(180deg);
   z-index: 3;
+  opacity: 0;
+  animation: fadeInRightTriangle 1s ease-out forwards;
+  animation-delay: 1.4s;
 }
 
 .message {
@@ -42,21 +51,37 @@
   left: 10%;
   color: var(--text-color-2);
   z-index: 5;
-  line-height: 0.5;
+  display: inline-block;
 }
 
 .message p {
   font-size: 3vw;
   font-weight: var(--font-regular);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
 }
 
 .message h1 {
   font-size: 5vw;
   font-weight: var(--font-semibold);
+  opacity: 0;
 }
 
-.message h1:nth-child(3) {
+.message h1:nth-of-type(1) {
+  animation: fadeInLeft 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.message h1:nth-of-type(2) {
+  animation: fadeInRight 1s ease-out forwards;
+  animation-delay: 1s;
   margin-left: 8vw;
+}
+
+.message p,
+.message h1 {
+  margin: 2vh 0;
 }
 
 .profession {
@@ -72,6 +97,9 @@
   font-size: 4vw;
   font-weight: var(--font-semibold);
   text-align: right;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 2s;
 }
 
 .resume-btn {
@@ -82,6 +110,9 @@
   padding: 14px 28px;
   font-size: var(--text-regular);
   font-weight: var(--font-semibold);
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 2s;
 }
 
 @media (max-width: 768px) {
@@ -90,5 +121,74 @@
     bottom: 10%;
     padding: 10px 20px;
     font-size: var(--text-small);
+  }
+}
+
+/* ========================= KEYFRAMES - ANIMATIONS =========================*/
+/* Simple Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade-in from bottom */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in from left */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeftTriangle {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade-in from right */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRightTriangle {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

@@ -19,17 +19,25 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia(
-      '(prefers-color-scheme: dark)',
-    ).matches;
-    const currentTheme = prefersDarkMode ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    setIsDarkTheme(prefersDarkMode);
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      setIsDarkTheme(savedTheme === 'dark');
+    } else {
+      const prefersDarkMode = window.matchMedia(
+        '(prefers-color-scheme: dark)',
+      ).matches;
+      const currentTheme = prefersDarkMode ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', currentTheme);
+      setIsDarkTheme(prefersDarkMode);
+    }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = isDarkTheme ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
     setIsDarkTheme(!isDarkTheme);
   };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { fadeLeft, fadeUp, containerStagger } from '../utils/motionVariants';
 import '../styles/About.css';
 import TechBox from './TechBox';
 import C from '../assets/Technologies/C_Logo.png';
@@ -15,25 +16,6 @@ import python from '../assets/Technologies/Python-logo-notext.svg.png';
 import typescript from '../assets/Technologies/png-clipart-angularjs-typescript-javascript-vue-js-others-blue-angle.png';
 import react from '../assets/Technologies/react-1-logo-png-transparent.png';
 import { useTranslation } from 'react-i18next';
-
-const fadeLeft = {
-  hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0 },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
-};
-
-const containerStagger = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
 
 const About = () => {
   const { t } = useTranslation();

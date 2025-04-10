@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn, fadeLeft, fadeRight } from '../utils/motionVariants';
 import '../styles/Contact.css';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,10 +13,26 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h1 className="section-title">{t('contact.contactMe')}</h1>
+      <motion.h1
+        className="section-title"
+        variants={fadeLeft}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.6 }}
+        transition={{ duration: 0.6 }}
+      >
+        {t('contact.contactMe')}
+      </motion.h1>
 
       <div className="contact-container">
-        <div className="contact-left">
+        <motion.div
+          className="contact-left"
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6 }}
+        >
           <div className="get-in-touch">
             <h2>{t('contact.getInTouch')}</h2>
             <a
@@ -41,13 +59,27 @@ const Contact = () => {
               <p>t.stefanidis24@gmail.com</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="line-between"></div>
+        <motion.div
+          className="line-between"
+          variants={fadeIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.8 }}
+          transition={{ duration: 0.6 }}
+        ></motion.div>
 
-        <div className="contact-right">
+        <motion.div
+          className="contact-right"
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.6 }}
+          transition={{ duration: 0.6 }}
+        >
           <ContactForm />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

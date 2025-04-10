@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import {
+  fadeLeft,
+  fadeUp,
+  fadeIn,
+  containerStagger,
+  fadeUpShort,
+} from '../utils/motionVariants';
 import '../styles/Projects.css';
 import MyProject from './MyProject';
 import { faArrowDownShortWide } from '@fortawesome/free-solid-svg-icons';
@@ -31,50 +39,78 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <h1 className="section-title">{t('projects.title')}</h1>
+      <motion.h1
+        className="section-title"
+        variants={fadeLeft}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.6 }}
+        transition={{ duration: 0.6 }}
+      >
+        {t('projects.title')}
+      </motion.h1>
 
-      <p className="section-text">{t('projects.text')}</p>
+      <motion.p
+        className="section-text"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.6 }}
+        transition={{ duration: 0.5 }}
+      >
+        {t('projects.text')}
+      </motion.p>
 
       {/* Category Filter Section */}
-      <div className="category-filter">
-        <div className="icon-filter">
-          <FontAwesomeIcon icon={faArrowDownShortWide} />
-        </div>
-        <span className="filterByCategory">
-          {t('projects.filterByCategory')}:
-        </span>
-        <div className="category-selection" onClick={toggleDropdown}>
-          <span
-            className="category-text"
-            style={{ color: 'var(--background-color-3)' }}
-          >
-            {selectedCategory}
-          </span>
-        </div>
-
-        {/* Dropdown for selecting category */}
-        {isDropdownVisible && (
-          <div className="category-dropdown">
-            <ul>
-              <li onClick={() => handleCategorySelect('All')}>
-                {t('projects.categories.all')}
-              </li>
-              <li onClick={() => handleCategorySelect('Web Development')}>
-                {t('projects.categories.webDev')}
-              </li>
-              <li onClick={() => handleCategorySelect('Desktop Applications')}>
-                {t('projects.categories.desktopApp')}
-              </li>
-              <li onClick={() => handleCategorySelect('Game Development')}>
-                {t('projects.categories.gameDev')}
-              </li>
-              <li onClick={() => handleCategorySelect('Mobile Applications')}>
-                {t('projects.categories.mobileApp')}
-              </li>
-            </ul>
+      <motion.div
+        variants={fadeUpShort}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false, amount: 0.6 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="category-filter">
+          <div className="icon-filter">
+            <FontAwesomeIcon icon={faArrowDownShortWide} />
           </div>
-        )}
-      </div>
+          <span className="filterByCategory">
+            {t('projects.filterByCategory')}:
+          </span>
+          <div className="category-selection" onClick={toggleDropdown}>
+            <span
+              className="category-text"
+              style={{ color: 'var(--background-color-3)' }}
+            >
+              {selectedCategory}
+            </span>
+          </div>
+
+          {/* Dropdown for selecting category */}
+          {isDropdownVisible && (
+            <div className="category-dropdown">
+              <ul>
+                <li onClick={() => handleCategorySelect('All')}>
+                  {t('projects.categories.all')}
+                </li>
+                <li onClick={() => handleCategorySelect('Web Development')}>
+                  {t('projects.categories.webDev')}
+                </li>
+                <li
+                  onClick={() => handleCategorySelect('Desktop Applications')}
+                >
+                  {t('projects.categories.desktopApp')}
+                </li>
+                <li onClick={() => handleCategorySelect('Game Development')}>
+                  {t('projects.categories.gameDev')}
+                </li>
+                <li onClick={() => handleCategorySelect('Mobile Applications')}>
+                  {t('projects.categories.mobileApp')}
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+      </motion.div>
 
       {/* Projects Container */}
       <div className="projects-container">

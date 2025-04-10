@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import {
   fadeLeft,
   fadeUp,
-  fadeIn,
   containerStagger,
   fadeUpShort,
 } from '../utils/motionVariants';
@@ -113,20 +112,32 @@ const Projects = () => {
       </motion.div>
 
       {/* Projects Container */}
-      <div className="projects-container">
+      <motion.div
+        className="projects-container"
+        key={selectedCategory}
+        variants={containerStagger}
+        initial="hidden"
+        animate="visible"
+      >
         {filteredProjects.map((project) => (
-          <MyProject
+          <motion.div
             key={project.id}
-            title={project.title}
-            thumbnail={project.thumbnail}
-            images={project.images}
-            videoURL={project.videoURL}
-            technologies={project.technologies}
-            projectLink={project.projectLink}
-            description={project.description}
-          />
+            variants={fadeUp}
+            transition={{ duration: 0.4 }}
+          >
+            <MyProject
+              key={project.id}
+              title={project.title}
+              thumbnail={project.thumbnail}
+              images={project.images}
+              videoURL={project.videoURL}
+              technologies={project.technologies}
+              projectLink={project.projectLink}
+              description={project.description}
+            />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -34,7 +34,7 @@ const resources = {
           id1: {
             title: 'High School Graduation',
             description:
-              'I completed my high school education in Thessaloniki, Greece, graduating with a mark of 18.4/20 (excellent) — a result that reflected my dedication and hard work throughout those years.',
+              'I completed my high school education in Thessaloniki, Greece, graduating with a mark of 18.4/20 (excellent).',
           },
           id2: {
             title: 'University - Computer Science Department',
@@ -116,7 +116,7 @@ const resources = {
           name: 'Your Name',
           email: 'Your Email Adress',
           message: 'Write your message here...',
-          send: 'Send Message',
+          send: 'Send',
           sending: 'Sending...',
         },
       },
@@ -140,33 +140,33 @@ const resources = {
       about: {
         title: 'Chi Sono',
         text1:
-          'Il mio viaggio nella programmazione è iniziato a 14 anni, quando ho provato per la prima volta a creare un videogioco. Vedere il mio codice prendere vita ha acceso in me una passione per la creazione di esperienze interattive da zero. Questa fascinazione mi ha portato a studiare Informatica, dove ho esplorato varie tecnologie e affinato le mie competenze. Sebbene la mia specializzazione sia nello sviluppo front-end, ho anche una solida base nelle tecnologie back-end, il che mi permette di contribuire efficacemente all’intero stack. Ora, come sviluppatore software, mi entusiasma dare vita alle idee attraverso codice pulito e design innovativo.',
-        text2: 'La mia esperienza abbraccia le seguenti tecnologie:',
+          'Il mio viaggio nella programmazione è iniziato a 14 anni, quando ho provato per la prima volta a creare un videogioco. Quando ho visto il mio codice prendere vita, ho scoperto quanto mi affascina creare esperienze interattive da zero. Questa passione mi ha spinto a studiare Informatica, dove ho esplorato varie tecnologie e sviluppato le mie competenze. Sebbene la mia specializzazione sia nello sviluppo front-end, ho anche una solida base nelle tecnologie back-end, il che mi permette di contribuire efficacemente all’intero stack. Ora, come sviluppatore software, mi entusiasma dare vita alle idee attraverso un codice pulito e un design innovativo.',
+        text2: 'Ho maturato esperienza nelle seguenti tecnologie:',
       },
       career: {
         title: 'Il Mio Percorso Professionale',
-        text: 'Ecco le tappe fondamentali che hanno plasmato il mio percorso come sviluppatore, dai miei primi passi nella programmazione fino a diventare un professionista del software.',
+        text: 'Ecco le tappe fondamentali che hanno segnato il mio percorso da sviluppatore, dai miei primi passi nella programmazione fino a diventare un professionista del software.',
         present: 'Presente',
         timeline: {
           id1: {
             title: 'Diploma di Maturità',
             description:
-              'Ho completato la mia istruzione superiore a Salonicco, in Grecia, diplomandomi con un voto di 18.4/20 (eccellente), un risultato che ha riflesso la mia dedizione e il mio impegno durante quegli anni.',
+              'Mi sono diplomato a Salonicco, in Grecia, con un voto di 18.4/20 (eccellente).',
           },
           id2: {
             title: 'Università - Dipartimento di Informatica',
             description:
-              "Sono stato ammesso al Dipartimento di Informatica dell'Università Aristotele di Salonicco, intraprendendo un percorso che ha approfondito la mia comprensione della tecnologia e della risoluzione dei problemi.",
+              "Sono stato ammesso al Dipartimento di Informatica dell'Università Aristotele di Salonicco, dove ho intrapreso un percorso che ha approfondito la mia comprensione della tecnologia e del problem-solving.",
           },
           id3: {
             title: '3D Printing',
             description:
-              "Ampia esperienza nella stampa 3D, inclusa la progettazione di modelli con software CAD (Autodesk Fusion 360), la modifica del G-code per stampe ottimizzate e la produzione di oggetti 3D personalizzati per clienti. Questo lavoro pratico ha migliorato le mie capacità di problem-solving e ha approfondito la mia comprensione della fabbricazione digitale e dell'automazione.",
+              'Ho una consolidata esperienza nella stampa 3D, che include la progettazione di modelli tramite software CAD (Autodesk Fusion 360), l’ottimizzazione del G-code per una stampa efficiente e la realizzazione di oggetti 3D personalizzati per clienti. Questo lavoro pratico ha migliorato le mie capacità di problem-solving e ha approfondito la mia comprensione della fabbricazione digitale e dei processi di automazione',
           },
           id4: {
             title: 'Esperienza di Tirocinio presso Value+ a Milano, Italia',
             description:
-              'Ho completato un tirocinio di tre mesi presso Value+ a Milano, Italia, dove ho acquisito esperienza pratica in React JavaScript e nello sviluppo web. Inoltre, ho migliorato il mio italiano e ho collaborato efficacemente con i miei colleghi, rafforzando sia le mie competenze tecniche che quelle interpersonali.\n(https://www.valueplus.it/)',
+              'Ho completato un tirocinio di tre mesi presso Value+ a Milano, dove ho acquisito esperienza pratica in React JavaScript e nello sviluppo web. Inoltre, ho migliorato il mio italiano e ho collaborato efficacemente con i miei colleghi, rafforzando sia le mie competenze tecniche che quelle interpersonali.\n(https://www.valueplus.it/)',
           },
           id5: {
             title: 'Laurea Universitaria',
@@ -182,7 +182,7 @@ const resources = {
       },
       projects: {
         title: 'I Miei Progetti',
-        text: 'Ecco alcuni dei progetti su cui ho lavorato, che vanno dalle applicazioni web agli esperimenti software. Ogni progetto riflette la mia passione per la programmazione, la risoluzione dei problemi e la creazione di esperienze utente intuitive.',
+        text: 'Ecco alcuni dei progetti su cui ho lavorato, che vanno dalle applicazioni web agli esperimenti software. Ogni progetto riflette la mia passione per la programmazione e la creazione di user-experiences intuitive.',
         seeMore: 'Vedi di più...',
         filterByCategory: 'Filtra per categoria',
         categories: {
@@ -196,22 +196,22 @@ const resources = {
           id6: {
             title: 'La mia Tesi',
             description:
-              "\"Miglioramento e Gamification di ePhos AR\" è il mio progetto di tesi universitaria, in cui ho lavorato al miglioramento e alla gamification dell'applicazione mobile ePhos AR. ePhos AR è un'app educativa che introduce gli studenti delle scuole superiori e universitari alla scienza della fotonica utilizzando la tecnologia della realtà aumentata.\n\nIl mio contributo si è concentrato sulla correzione di bug e sull'integrazione di elementi di gamification per aumentare il coinvolgimento degli utenti—un approccio supportato da ricerche scientifiche. In particolare, ho aggiunto:\n\n-Un assistente virtuale per guidare gli utenti durante l’esperienza, sostituendo le istruzioni cartacee tradizionali.\n-Una barra di progresso per visualizzare i progressi del giocatore.\n-Badge per premiare i traguardi raggiunti e incentivare l'esplorazione.\n\nQueste funzionalità sono state sviluppate in Unity con C#, nel corso di sei mesi di lavoro e ricerca dedicati. L'obiettivo era rendere l'apprendimento più interattivo, piacevole ed efficace.",
+              "La mia tesi universitaria si è basata sul progetto \"Miglioramento e Gamification di ePhos AR\". ePhos AR è un'app educativa che introduce gli studenti delle scuole superiori e universitari alla scienza della fotonica utilizzando la tecnologia della realtà aumentata.\n\nIl mio contributo si è concentrato sulla correzione di bug e sull'integrazione di elementi di gamification per aumentare il coinvolgimento degli utenti—un approccio supportato da ricerche scientifiche. In particolare, ho aggiunto:\n\n-Un assistente virtuale per guidare gli utenti durante l’esperienza, il quale ha sostituito le istruzioni cartacee tradizionali che erano presenti in origine.\n-Una barra di progresso per visualizzare i progressi del giocatore.\n-Badge per premiare i traguardi raggiunti e incentivare l'esplorazione.\n\nQueste funzionalità sono state sviluppate in Unity con C#, nel corso di sei mesi di lavoro e ricerca dedicati. L'obiettivo era rendere l'apprendimento più interattivo, piacevole ed efficace.",
           },
           id5: {
             title: 'Viva Customers',
             description:
-              "Per gestire la mia attività di stampa 3D, ho sviluppato Viva Customers, un'applicazione Java Swing che memorizza i dati dei clienti e la cronologia delle vendite in un database SQL. Questo progetto mi ha aiutato a imparare a creare un'interfaccia utente reattiva e a gestire in modo efficiente un database, garantendo un programma leggero e fluido su qualsiasi computer Windows.",
+              "Per gestire la mia attività di stampa 3D, ho sviluppato Viva Customers, un'applicazione Java Swing che memorizza i dati dei clienti e la cronologia delle vendite in un database SQL. Con questo progetto ho imparato a creare un'interfaccia utente reattiva e a gestire in modo efficiente un database, garantendo un programma leggero e fluido su qualsiasi computer Windows.",
           },
           id4: {
             title: 'FortKnight',
             description:
-              'Come appassionato di scacchi, ho contribuito a FortKnight, un gioco di scacchi web con regole uniche. Ho aggiunto un interruttore che visualizza le mosse possibili del cavallo con dei punti verdi, migliorando la chiarezza per i giocatori. Questo contributo mi ha sfidato a esplorare un codice sconosciuto scritto in HTML, CSS e JavaScript, migliorando sia le mie abilità di programmazione che la mia capacità di adattamento a nuovi progetti.',
+              'Sono anche un appassionato di scacchi e ho contribuito a FortKnight, un gioco di scacchi web con regole uniche. Ho aggiunto un interruttore che visualizza le mosse possibili del cavallo con dei punti verdi, rendendo così il gioco più intuitivo per i giocatori. Questo progetto è stato una sfida che mi ha portato a esplorare un codice sconosciuto scritto in HTML, CSS e JavaScript, migliorando sia le mie abilità di programmazione che la mia capacità di adattamento a nuovi progetti.',
           },
           id3: {
             title: 'Run 4 Life (Videogioco)',
             description:
-              "Run 4 Life è un gioco d'azione 3D che ho sviluppato come parte di un progetto universitario. In questa sfida frenetica, il giocatore deve evitare ostacoli, raccogliere diamanti e raggiungere il traguardo. È stata la mia prima esperienza nell'unire grafica 3D, effetti sonori e animazioni, tutto realizzato con Unity e C#.",
+              "Run 4 Life è un gioco d'azione 3D che ho sviluppato come parte di un progetto universitario. In questa sfida frenetica, il giocatore deve evitare ostacoli, raccogliere diamanti e raggiungere il traguardo. È stata la mia prima esperienza nell'unire grafica 3D, effetti sonori e animazioni, il tutto realizzato con Unity e C#.",
           },
           id2: {
             title: 'The Number (Videogioco)',
@@ -221,19 +221,19 @@ const resources = {
           id1: {
             title: 'Il mio primo videogioco - Maze Rush',
             description:
-              "All'età di 14 anni, ho creato il mio primo videogioco con Game Maker Studio — un'esperienza che ha acceso la mia passione per la programmazione. In questo gioco, il giocatore controlla una faccina sorridente che deve attraversare labirinti pieni di nemici e ostacoli per raggiungere il portale che conduce al livello successivo. Questo progetto ha segnato il mio primo passo nel mondo dello sviluppo videoludico e delle esperienze interattive.",
+              "All'età di 14 anni, ho creato il mio primo videogioco con Game Maker Studio — un'esperienza che ha acceso la mia passione per la programmazione. lo scopo del gioco è controllare una faccina sorridente stile pacman che deve attraversare labirinti pieni di nemici e ostacoli per raggiungere il portale che conduce al livello successivo. Questo progetto ha segnato il mio primo passo nel mondo dello sviluppo videoludico e delle esperienze interattive.",
           },
         },
       },
       contact: {
         contactMe: 'Contattami',
-        getInTouch: 'Mettiti in contatto',
+        getInTouch: 'Ti aspetto!',
         myEmail: 'La mia email',
         contactForm: {
-          name: 'Il tuo nome',
-          email: 'Il tuo indirizzo email',
+          name: 'Nome',
+          email: 'Indirizzo email',
           message: 'Scrivi qui il tuo messaggio...',
-          send: 'Invia Messaggio',
+          send: 'Invia',
           sending: 'Invia...',
         },
       },

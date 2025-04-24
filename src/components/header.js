@@ -4,6 +4,7 @@ import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 import i18n from '../utils/i18n';
+import { Squash as Hamburger } from 'hamburger-react';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -11,6 +12,14 @@ const Header = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
   const topOffset = 80;
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1182);
+  const [openMenu, setOpenMenu] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1182);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 0);
@@ -68,6 +77,10 @@ const Header = () => {
     setIsDropdownVisible((prevState) => !prevState);
   };
 
+  const toggleOpenMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
@@ -77,35 +90,103 @@ const Header = () => {
           </a>
         </div>
 
-        <nav className="nav">
-          <ul>
-            <li>
-              <a onClick={() => scrollToSection('home')}>{t('header.home')}</a>
-            </li>
-            <li>
-              <a onClick={() => scrollToSection('about')}>
-                {t('header.about')}
-              </a>
-            </li>
-            <li>
-              <a onClick={() => scrollToSection('career')}>
-                {t('header.career')}
-              </a>
-            </li>
-            <li>
-              <a onClick={() => scrollToSection('projects')}>
-                {t('header.projects')}
-              </a>
-            </li>
-          </ul>
-        </nav>
+        {!isMobile ? (
+          <>
+            <nav className="nav">
+              <ul>
+                <li>
+                  <a onClick={() => scrollToSection('home')}>
+                    {t('header.home')}
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => scrollToSection('about')}>
+                    {t('header.about')}
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => scrollToSection('career')}>
+                    {t('header.career')}
+                  </a>
+                </li>
+                <li>
+                  <a onClick={() => scrollToSection('projects')}>
+                    {t('header.projects')}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <button
+              className="contact-btn"
+              onClick={() => scrollToSection('contact')}
+            >
+              {t('header.contactBTN')}
+            </button>
+          </>
+        ) : (
+          <>
+            <div className="hamburger-btn" onClick={toggleOpenMenu}>
+              <Hamburger size={26} toggled={openMenu} toggle={toggleOpenMenu} />
+            </div>
 
-        <button
-          className="contact-btn"
-          onClick={() => scrollToSection('contact')}
-        >
-          {t('header.contactBTN')}
-        </button>
+            <div className={`menu-overlay ${openMenu ? '' : 'hidden'}`}>
+              <nav className="mobile-nav">
+                <ul>
+                  <li>
+                    <a
+                      onClick={() => {
+                        scrollToSection('home');
+                        toggleOpenMenu();
+                      }}
+                    >
+                      {t('header.home')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick={() => {
+                        scrollToSection('about');
+                        toggleOpenMenu();
+                      }}
+                    >
+                      {t('header.about')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick={() => {
+                        scrollToSection('career');
+                        toggleOpenMenu();
+                      }}
+                    >
+                      {t('header.career')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick={() => {
+                        scrollToSection('projects');
+                        toggleOpenMenu();
+                      }}
+                    >
+                      {t('header.projects')}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      onClick={() => {
+                        scrollToSection('contact');
+                        toggleOpenMenu();
+                      }}
+                    >
+                      {t('header.contactBTN')}
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </>
+        )}
       </div>
 
       <div className="language-selection" onClick={toggleDropdown}>

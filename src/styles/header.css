@@ -147,6 +147,85 @@
   color: var(--text-color-2);
 }
 
+/*========================= MOBILE DEVICE =================================*/
+.hamburger-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--text-color-1);
+  z-index: 11;
+}
+
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: var(--background-color-1);
+  opacity: 0.95;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+.menu-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav li {
+  margin: 3rem 0;
+}
+
+.mobile-nav a {
+  font-size: var(--text-large);
+  font-weight: var(--font-semibold);
+  color: var(--text-color-1);
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  color: var(--text-color-2);
+}
+
+@media (max-width: 1182px) {
+  #theme-switch-btn {
+    right: 90px;
+  }
+
+  .language-selection {
+    right: 160px;
+  }
+
+  .language-dropdown {
+    right: 150px;
+  }
+
+  .logo-link {
+    margin-left: 100px;
+  }
+}
+
 /* ========================= KEYFRAMES - ANIMATIONS =========================*/
 /* Simple Fade-in */
 @keyframes fadeIn {

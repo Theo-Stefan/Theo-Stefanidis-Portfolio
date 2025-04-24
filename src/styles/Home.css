@@ -5,7 +5,7 @@
 }
 
 .photo {
-  width: 40vw;
+  width: auto;
   height: auto;
   display: block;
   margin-left: 40%;

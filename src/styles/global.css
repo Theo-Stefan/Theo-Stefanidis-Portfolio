@@ -53,6 +53,21 @@ html[data-theme='dark'] {
 }
 
 /*======================================================*/
+@media (max-width: 1182px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+}
 
 body {
   font-family: var(--font-main);

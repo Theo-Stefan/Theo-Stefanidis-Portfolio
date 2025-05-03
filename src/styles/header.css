@@ -226,6 +226,12 @@
   }
 }
 
+@media (max-width: 400px) {
+  .logo-link {
+    margin-left: 30px;
+  }
+}
+
 /* ========================= KEYFRAMES - ANIMATIONS =========================*/
 /* Simple Fade-in */
 @keyframes fadeIn {

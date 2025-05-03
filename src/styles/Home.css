@@ -20,6 +20,7 @@
   width: 0;
   height: 0;
   border-style: solid;
+  display: flex;
 }
 
 .triangle.one {
@@ -115,12 +116,123 @@
   animation-delay: 2s;
 }
 
-@media (max-width: 768px) {
-  .resume-button {
+/*========================= MOBILE DEVICE =================================*/
+@media (max-width: 1182px) {
+  .photo {
+    margin-left: 35%;
+  }
+
+  .resume-btn {
     left: 10%;
-    bottom: 10%;
-    padding: 10px 20px;
-    font-size: var(--text-small);
+  }
+}
+
+@media (max-width: 1000px) {
+  .photo {
+    margin-left: 30%;
+  }
+
+  .profession h1 {
+    font-size: 5vw;
+  }
+
+  .resume-btn {
+    left: 5%;
+  }
+}
+
+@media (max-width: 830px) {
+  .photo {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    margin-left: 50%;
+    transform: translateX(-50%) !important;
+  }
+
+  .triangle.two {
+    border-width: 60vh 60vw 0 0;
+  }
+
+  .profession {
+    right: 2%;
+  }
+
+  .profession h1 {
+    font-size: 6vw;
+  }
+
+  .resume-btn {
+    left: 4%;
+    bottom: 15%;
+    font-size: var(--text-xs);
+  }
+
+  .message {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .message p {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+  }
+
+  .message h1 {
+    font-size: 6vw;
+    margin: 0 2vw;
+  }
+
+  .message h1:nth-of-type(2) {
+    margin-left: auto;
+  }
+
+  .message-names {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .triangle.two {
+    border-width: 60vh 80vw 0 0;
+  }
+
+  .profession {
+    right: 2%;
+    bottom: 15%;
+  }
+
+  .profession h1 {
+    font-size: 7vw;
+  }
+
+  .resume-btn {
+    left: auto;
+    right: 2%;
+    bottom: 8%;
+    font-size: var(--text-xs);
+  }
+}
+
+@media (max-width: 530px) {
+  .message p {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+  }
+
+  .message h1 {
+    font-size: 8vw;
+    margin: 0 2vw;
+  }
+
+  .profession h1 {
+    font-size: 8vw;
   }
 }
 

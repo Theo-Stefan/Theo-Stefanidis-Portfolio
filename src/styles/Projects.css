@@ -72,3 +72,17 @@
   color: var(--text-color-2);
   background-color: var(--background-color-2);
 }
+
+/*========================== MOBILE DEVICE =========================*/
+
+@media (max-width: 1182px) {
+  .projects-container {
+    margin: 50px 100px 100px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .projects-container {
+    margin: 50px 50px 100px;
+  }
+}

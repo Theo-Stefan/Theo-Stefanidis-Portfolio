@@ -64,3 +64,29 @@
   margin-left: -370px;
   margin-top: -50px;
 }
+
+/*========================== MOBILE DEVICE =========================*/
+
+@media (max-width: 900px) {
+  .timeline-container {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 670px) {
+  .timeline-container {
+    zoom: 0.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-container {
+    zoom: 0.5;
+  }
+}
+
+@media (max-width: 380px) {
+  .timeline-container {
+    zoom: 0.4;
+  }
+}

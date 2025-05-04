@@ -5,3 +5,21 @@
   justify-content: center;
   margin: 50px 250px 100px;
 }
+
+@media (max-width: 1182px) {
+  .techbox-container {
+    margin: 50px 100px 100px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .techbox-container {
+    margin: 50px 80px 100px;
+  }
+}
+
+@media (max-width: 560px) {
+  .techbox-container {
+    margin: 50px 20px 100px;
+  }
+}

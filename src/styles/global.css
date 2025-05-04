@@ -116,6 +116,20 @@ button:hover {
   padding-right: 250px;
 }
 
+@media (max-width: 1182px) {
+  .section-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 /* ======= Customize Scrollbar ========= */
 ::-webkit-scrollbar {
   width: 5px;

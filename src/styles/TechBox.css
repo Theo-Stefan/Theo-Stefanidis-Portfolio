@@ -52,3 +52,25 @@
   opacity: 1;
   transform: translateX(5px);
 }
+
+/*========================== MOBILE DEVICE =========================*/
+
+@media (max-width: 1060px) {
+  .rectangle {
+    zoom: 0.8;
+  }
+
+  .rectangle:hover {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 720px) {
+  .rectangle {
+    zoom: 0.6;
+  }
+
+  .rectangle:hover {
+    zoom: 0.6;
+  }
+}

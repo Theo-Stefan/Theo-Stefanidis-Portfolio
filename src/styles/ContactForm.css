@@ -36,7 +36,7 @@
 }
 
 .contact-form button {
-  width: 400px;
+  width: 100%;
 }
 
 .spinner {
@@ -61,4 +61,19 @@
 .contact-form button:disabled {
   background-color: var(--background-color-1);
   cursor: not-allowed;
+}
+
+/*========================== MOBILE DEVICE =========================*/
+
+@media (max-width: 860px) {
+  .contact-form {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 710px) {
+  .contact-form {
+    width: auto;
+    padding: 0;
+  }
 }

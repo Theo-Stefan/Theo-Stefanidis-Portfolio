@@ -73,3 +73,45 @@ a .contact-icon:active {
 .contact-email p {
   color: var(--background-color-1);
 }
+
+/*========================== MOBILE DEVICE =========================*/
+
+@media (max-width: 860px) {
+  .line-between {
+    height: 350px;
+  }
+}
+
+@media (max-width: 710px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line-between {
+    width: 400px;
+    height: 2px;
+    top: 39%;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .contact-left {
+    zoom: 0.9;
+  }
+
+  .line-between {
+    width: 300px;
+    top: 37%;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 280px;
+  }
+}

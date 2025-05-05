@@ -15,7 +15,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.6.3",
     "hamburger-react": "^2.5.2",
-    "i18next": "^24.2.3",
+    "i18next": "^23.4.6",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",

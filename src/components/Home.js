@@ -40,7 +40,9 @@ const Home = () => {
 
       <img className="photo" src={myPhoto} alt="Theo" />
 
-      <button className="resume-btn">{t('home.resumeBTN')}</button>
+      <a href="/CV/Theo Stefanidis Resume.pdf" download>
+        <button className="resume-btn">{t('home.resumeBTN')}</button>
+      </a>
     </section>
   );
 };

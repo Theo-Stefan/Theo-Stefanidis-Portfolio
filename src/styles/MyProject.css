@@ -176,6 +176,13 @@ body.active-ProjectModal {
 
 /*========================== MOBILE DEVICE =========================*/
 
+@media (max-width: 1182px) {
+  .ProjectModal-window {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
 @media (max-width: 1140px) {
   .project-rectangle {
     zoom: 0.9;
@@ -197,5 +204,10 @@ body.active-ProjectModal {
 @media (max-width: 480px) {
   .project-rectangle {
     zoom: 0.5;
+  }
+
+  .ProjectModal-window {
+    width: 90vw;
+    height: 70vh;
   }
 }

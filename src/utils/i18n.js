@@ -47,7 +47,7 @@ const resources = {
               'Extensive experience with 3D printing, including designing models in CAD software (Autodesk Fusion 360), modifying G-code for optimized prints, and producing custom 3D-printed objects for customers. This hands-on work enhanced my problem-solving skills and deepened my understanding of digital fabrication and automation.',
           },
           id4: {
-            title: 'Intership Experience at Value+ in Milan, Italy',
+            title: 'Internship Experience at Value+ in Milan, Italy',
             description:
               'I completed a 3-month internship at Value+ in Milan, Italy, where I gained hands-on experience in React JavaScript and web development. I also improved my Italian and collaborated effectively with my colleagues, enhancing both my technical and interpersonal skills.\n(https://www.valueplus.it/)',
           },
